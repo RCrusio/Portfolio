@@ -10,6 +10,8 @@ h2{
     font-size: 28px;
 }
 
+
+
 /*----------------------------------------------------------------------*/
 /*SEC A*/
 
@@ -84,6 +86,31 @@ h2{
 }
 
 /*----------------------------------------------------------------------*/
+/*Sec D*/
+.secD{
+    width: 100%;
+    height: auto;
+    background-color: #EDE4E0;
+    padding: 50px 50px;
+    color: rgb(228, 228, 228);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*----------------------------------------------------------------------*/
+/*Sec E*/
+.secE{
+    width: 100%;
+    height: auto;
+    background-color: #256D85;
+    padding: 50px 50px;
+    color: rgb(228, 228, 228);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.secE h1{
+    color: rgb(228, 228, 228);
+}
+/*----------------------------------------------------------------------*/
 /*image css*/
 
 .imgintro{
@@ -91,7 +118,7 @@ h2{
     margin-top: 89px;
 }
 
-.profile{
+.profileimg{
     width: 300px;
     -webkit-box-shadow: 0px 2px 49px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 49px 4px rgba(0,0,0,0.75);
@@ -113,7 +140,7 @@ h2{
         width: 90%;
     }
 
-    .profile{
+    .profileimg{
         width: 100%;
     }
     
@@ -154,7 +181,7 @@ h2{
         width: 300px;
         }
 
-    .profile{
+    .profileimg{
         width: 200px;
     }
 
@@ -163,6 +190,9 @@ h2{
     }
     .p{
         font-size: 15px;
+    }
+    .intro{
+    font-size: 25px;
     }
 }
 
