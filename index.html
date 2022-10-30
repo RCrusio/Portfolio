@@ -55,7 +55,7 @@
 
       <section class="secB">
         <center><h1 id="about">About</h1>
-        <div class="content-div-secB">
+        <div class="content-div-secB reveal">
           <div class="leftB">
 
               <center>
@@ -74,7 +74,7 @@
 
       <section class="secC">
       <center><h1 id="skills">Skills</h1></center>
-      <div class="skillrow">
+      <div class="skillrow reveal">
         <ul class="card-wrapper">
           <li class="card">
             <img src="img/html.png">
@@ -126,7 +126,7 @@
 
       <section class="secD">
         <center><h1 id="gallery" class="gal">Gallery</h1></center>
-        <div class="gallery">
+        <div class="gallery reveal">
           <div class="image-gallery">
             <div class="column">
               <div class="image-item">
@@ -166,7 +166,7 @@
 
       <section class="secE">
         <center><h1 id="contact" class="gal">Contact</h1>
-          <div class="content-div-secE">
+          <div class="content-div-secE reveal">
           <div class="contact-info">
             <div class="contact">
               <i class="contact-icon far fa-envelope"></i>
@@ -189,6 +189,27 @@
         </div>
         </center>
       </section>
+
+      <script>
+        window.addEventListener('scroll', reveal);
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+          
+          for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+      </script>
       
       <section class="footer">
         <div class="wrap">
